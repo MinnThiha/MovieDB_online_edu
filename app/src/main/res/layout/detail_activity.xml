@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2b2b">
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2d2b2b">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <ImageView
+                android:id="@+id/iv_poster_da"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="centerCrop" />
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="#2d2b2b"
+            android:id="@+id/iv_detail"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_detail"
+            android:layout_below="@id/iv_poster_da"
+            tools:text="hello"
+            android:id="@+id/tv_rating_da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMDB"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:id="@+id/IMDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rating_da"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_detail"
+            android:text="IMDB"
+            android:textColor="#ffff" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/IMDB"
+            android:layout_below="@id/tv_rating_da"
+            android:id="@+id/tv_name_da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Movie Name"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#fff" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:text="Screen Shoot"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:id="@+id/rv_ss_da"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Trailer"
+        android:textColor="#fff"
+        android:textAlignment="textStart"
+        android:textSize="20sp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rs_trailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
